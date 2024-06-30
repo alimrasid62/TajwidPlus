@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Tajwid Plus</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="idgham_description1">Menurut bahasa, idgham berarti ‘memasukkan sesuatu pada sesuatu’. Maksudnya adalah dengan memasukkan huruf nun mati  (نْ) pada idgham. Sementara menurut istilah, idgham dapat berarti ‘pertemuan huruf mati dengan huruf hidup sehingga kedua huruf tersebut menjadi satu huruf yang ditasydid.</string>
+    <string name="idgham_description2">Nah kesimpulannya, bacaan idgham ini berupa memasukkan  (نْ) atau tanwin (ـًـــٍـــٌ) pada huruf-huruf idgham dan seakan-akan kedua huruf tersebut menjadi satu.</string>
+    <string name="idgham_description3">Pada idgham ini, pembagian hurufnya bergantung pada jenis-jenis idgham itu sendiri, yang berjumlah 6 huruf. Sehingga jika terdapat nun mati  (نْ) atau tanwin (ـًـــٍـــٌ) bertemu dengan salah satu keenam huruf tersebut, maka nun mati  (نْ) atau tanwin (ـًـــٍـــٌ) harus dimasukkan padanya. Keenam huruf itu ada yang dibaca dengan cara mendengung, ada pula yang tidak.</string>
+
+    <!--    <string name="penjelasan_izharHalqi">-->
+    <!--        Secara bahasa, izhar adalah bayan atau jelas, sedangkan-->
+    <!--        menurut istilah adalah membaca nun mati (نْ) atau tanwin ( ـَــًـ , ـِــٍـ , ـُــٌـ ) dengan jelas-->
+    <!--        tanpa suara dengung atau disamarkan. Hal ini sebagaimana dijelaskan dalam buku Pintar Al-Quran-->
+    <!--        karya Abu Nizhan.Ada enam huruf izhar, yaitu hamzah (ء), kha (ح), ha (خ), ain (ع), ghain (غ),-->
+    <!--        dan ha' (هـ).-->
+    <!--    </string>-->
+</resources>

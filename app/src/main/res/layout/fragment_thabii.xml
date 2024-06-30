@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.ThabiiFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Mad Thabi'i"
+            android:textSize="30dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hukum tajwid yang selanjutnya adalah mad. Secara bahasa, mad artinya bertambah dan memanjang, sedangkan menurut istilah adalah memanjangkan suara dengan huruf mad atau lin ketika adanya suatu sebab seperti hamzah (ء) dan sukun (ه)."
+            android:textSize="20dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jenis mad yang pertama adalah mad mad thabi'i. Hukum ini berlaku pada alif (ا) sesudah fathah, ya (ي) sukun sesudah kasrah, dan wau (و) yang sesudah dhammah."
+            android:textSize="20dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Contoh Mad Thabi'i:"
+            android:textSize="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="بِّ ٱلنَّاسَِّْ"
+            android:textSize="20dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Birabbin-nās (QS An Nas ayat 1)."
+            android:textSize="20dp"/>
+
+    </LinearLayout>
+
+</FrameLayout>

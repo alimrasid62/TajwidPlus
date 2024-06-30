@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.IkhfaSyafawiFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Ikhfa Syafawi"
+            android:textSize="30dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dikutip dari buku Ilmu Tajwid Praktis oleh Muhammad Amri Amir, ikhfa syafawi adalah hukum tajwid ketika mim sukun (مْ) bertemu dengan huruf ba (ب). Dalam hal ini, mim sukun dibaca tampak samar disertai ghunnah."
+            android:textSize="20dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Contoh ikhfa syafawi:"
+            android:textSize="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="أتَرْمِيهِم بِحِجَارَةٍَّْ"
+            android:textSize="20dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tarmīhim biḥijāratim (Al Fil ayat 4)"
+            android:textSize="20dp"/>
+
+    </LinearLayout>
+
+</FrameLayout>

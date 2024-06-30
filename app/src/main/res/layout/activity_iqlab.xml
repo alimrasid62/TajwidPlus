@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".materi.IqlabActivity"
+    android:orientation="vertical"
+    android:background="@color/bg_app">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Iqlab"
+            android:textSize="30dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Secara bahasa, iqlab berarti memindahkan atau mengubah sesuatu dari asalnya. Sementara, secara istilah, iqlab adalah mengubah atau menggantikan nun mati menjadi mim disertai dengungan jika bertemu dengan huruf ba (ب)."
+            android:textSize="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Contoh bacaan Iqlab:"
+            android:textSize="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="مِنْۢ بَعْدٍََِّْ"
+            android:textSize="20dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mimm ba'di (QS Al Bayyinah: 4)"
+            android:textSize="20dp"/>
+
+
+</LinearLayout>

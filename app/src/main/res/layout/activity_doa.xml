@@ -5,7 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.DoaActivity">
+    tools:context=".activity.DoaActivity"
+    android:background="@color/bg_app">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"

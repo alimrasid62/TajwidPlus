@@ -10,11 +10,12 @@ android {
     defaultConfig {
         applicationId = "com.alimrasid.tajwidplusver11"
         minSdk = 24
-        targetSdk = 34
+        targetSdk = 33
         versionCode = 1
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+
     }
 
     buildTypes {

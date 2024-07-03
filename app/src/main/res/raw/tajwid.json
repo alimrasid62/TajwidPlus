@@ -1,0 +1,27 @@
+[
+  {
+    "no": 1,
+    "nama_bacaan": "Idgham Bighunnah",
+    "huruf": ["ي", "ن", "م", "و"]
+  },
+  {
+    "no": 2,
+    "nama_bacaan": "Idgham Bilaghunnah",
+    "huruf": ["ل", "ر"]
+  },
+  {
+    "no": 3,
+    "nama_bacaan": "Iqlab",
+    "huruf": ["ب"]
+  },
+  {
+    "no": 4,
+    "nama_bacaan": "Ikhfa",
+    "huruf": ["ت", "ث", "ج", "د", "ذ", "ز", "س", "ش", "ص", "ض", "ط", "ظ", "ف", "ق", "ك"]
+  },
+  {
+    "no": 5,
+    "nama_bacaan": "Izhar",
+    "huruf": ["ا", "ه", "ح", "خ", "ع", "غ"]
+  }
+]

@@ -6,7 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activity.SuratActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/bg_app">
 
     <TextView
         android:id="@+id/namaLatinTextView"
@@ -14,21 +15,27 @@
         android:layout_height="wrap_content"
         android:textSize="18sp"
         android:textStyle="bold"
-        android:padding="8dp" />
+        android:padding="8dp"
+        android:fontFamily="@font/tt_cocolates_trial_bold"
+        android:textColor="@color/bd_text"/>
 
     <TextView
         android:id="@+id/artiTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="16sp"
-        android:padding="8dp" />
+        android:padding="8dp"
+        android:fontFamily="@font/tt_cocolates_trial_demibold"
+        android:textColor="@color/bd_text"/>
 
     <TextView
         android:id="@+id/deskripsiTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="14sp"
-        android:padding="8dp" />
+        android:padding="8dp"
+        android:fontFamily="@font/tt_cocolates_trial_demibold"
+        android:textColor="@color/bd_text"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"

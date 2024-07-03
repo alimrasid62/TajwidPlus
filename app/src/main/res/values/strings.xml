@@ -6,6 +6,9 @@
     <string name="idgham_description2">Nah kesimpulannya, bacaan idgham ini berupa memasukkan  (نْ) atau tanwin (ـًـــٍـــٌ) pada huruf-huruf idgham dan seakan-akan kedua huruf tersebut menjadi satu.</string>
     <string name="idgham_description3">Pada idgham ini, pembagian hurufnya bergantung pada jenis-jenis idgham itu sendiri, yang berjumlah 6 huruf. Sehingga jika terdapat nun mati  (نْ) atau tanwin (ـًـــٍـــٌ) bertemu dengan salah satu keenam huruf tersebut, maka nun mati  (نْ) atau tanwin (ـًـــٍـــٌ) harus dimasukkan padanya. Keenam huruf itu ada yang dibaca dengan cara mendengung, ada pula yang tidak.</string>
 
+    <string name="bigunnah1">Secara bahasa, idgham artinya idkhal atau memasukkan, sedangkan secara istilah adalah menyamarkan atau meleburkan nun mati atau tanwin dengan huruf-huruf idgham sehingga seolah-olah menjadi satu huruf yang bertasydid.</string>
+    <string name="bigunnah2">Adapun, idgham bigunnah yaitu jika nun mati atau tanwin bertemu dengan huruf ya (ي), nun (ن), mim (م), dan wau (و), maka harus dibaca idgham disertai dengan dengung di hidung (gunnah).</string>
+
     <!--    <string name="penjelasan_izharHalqi">-->
     <!--        Secara bahasa, izhar adalah bayan atau jelas, sedangkan-->
     <!--        menurut istilah adalah membaca nun mati (نْ) atau tanwin ( ـَــًـ , ـِــٍـ , ـُــٌـ ) dengan jelas-->

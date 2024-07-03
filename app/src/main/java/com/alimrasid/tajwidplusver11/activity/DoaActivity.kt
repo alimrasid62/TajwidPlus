@@ -3,6 +3,7 @@ package com.alimrasid.tajwidplusver11.activity
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
+import android.widget.SearchView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -26,15 +27,30 @@ class DoaActivity : AppCompatActivity() {
 
     private lateinit var recyclerView: RecyclerView
     private lateinit var doaAdapter: DoaAdapter
+    private lateinit var searchView: SearchView
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_doa)
 
         recyclerView = findViewById(R.id.recyclerView)
+//        searchView = findViewById(R.id.searchView)
+
         recyclerView.layoutManager = LinearLayoutManager(this)
 
         fetchDoaData()
+
+//        searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
+//            override fun onQueryTextSubmit(query: String?): Boolean {
+//                return false
+//            }
+//
+//            override fun onQueryTextChange(newText: String?): Boolean {
+//                doaAdapter.filter.filter(newText)
+//                return false
+//            }
+//        })
     }
 
 

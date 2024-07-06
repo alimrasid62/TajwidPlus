@@ -13,9 +13,7 @@ import com.alimrasid.tajwidplusver11.activity.DetaiDoaActivity
 import com.alimrasid.tajwidplusver11.api.Doa
 import java.util.Locale
 
-class DoaAdapter(private var doaList: List<Doa>) : RecyclerView.Adapter<DoaAdapter.DoaViewHolder>(), Filterable {
-
-    private var doaListFull: List<Doa> = ArrayList(doaList)
+class DoaAdapter(private var doaList: List<Doa>) : RecyclerView.Adapter<DoaAdapter.DoaViewHolder>() {
 
     class DoaViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val tvJudul: TextView = itemView.findViewById(R.id.tvJudul)
@@ -48,32 +46,8 @@ class DoaAdapter(private var doaList: List<Doa>) : RecyclerView.Adapter<DoaAdapt
         return doaList.size
     }
 
-    override fun getFilter(): Filter {
-        return doaFilter
-    }
-
-    private val doaFilter: Filter = object : Filter() {
-        override fun performFiltering(constraint: CharSequence?): FilterResults {
-            val filteredList: MutableList<Doa> = ArrayList()
-            if (constraint == null || constraint.isEmpty()) {
-                filteredList.addAll(doaListFull)
-            } else {
-                val filterPattern = constraint.toString().toLowerCase(Locale.ROOT).trim { it <= ' ' }
-                for (doa in doaListFull) {
-                    if (doa.judul.toLowerCase(Locale.ROOT).contains(filterPattern)) {
-                        filteredList.add(doa)
-                    }
-                }
-            }
-            val results = FilterResults()
-            results.values = filteredList
-            return results
-        }
-
-        @Suppress("UNCHECKED_CAST")
-        override fun publishResults(constraint: CharSequence?, results: FilterResults?) {
-            doaList = results?.values as List<Doa>
-            notifyDataSetChanged()
-        }
+    fun updateList(newList: List<Doa>) {
+        doaList = newList
+        notifyDataSetChanged()
     }
 }

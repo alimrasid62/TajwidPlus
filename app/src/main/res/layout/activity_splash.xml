@@ -1,183 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SplashActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/bg_app">
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/ic_logov2"/>
 
-    <GridLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:columnCount="8"
-        android:rowCount="2"
-        android:layout_gravity="center"
-        android:padding="16dp">
 
-        <!-- Row 1 -->
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_row="0"
-            android:layout_column="0"
-            android:layout_columnWeight="1"
-            android:text="Item 1"
-            android:gravity="center"
-            android:padding="8dp"/>
 
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_row="0"
-            android:layout_column="1"
-            android:layout_columnWeight="1"
-            android:text="Item 2"
-            android:gravity="center"
-            android:padding="8dp"/>
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_row="0"
-            android:layout_column="2"
-            android:layout_columnWeight="1"
-            android:text="Item 3"
-            android:gravity="center"
-            android:padding="8dp"/>
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_row="0"
-            android:layout_column="3"
-            android:layout_columnWeight="1"
-            android:text="Item 4"
-            android:gravity="center"
-            android:padding="8dp"/>
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_row="0"
-            android:layout_column="4"
-            android:layout_columnWeight="1"
-            android:text="Item 5"
-            android:gravity="center"
-            android:padding="8dp"/>
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_row="0"
-            android:layout_column="5"
-            android:layout_columnWeight="1"
-            android:text="Item 6"
-            android:gravity="center"
-            android:padding="8dp"/>
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_row="0"
-            android:layout_column="6"
-            android:layout_columnWeight="1"
-            android:text="Item 7"
-            android:gravity="center"
-            android:padding="8dp"/>
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_row="0"
-            android:layout_column="7"
-            android:layout_columnWeight="1"
-            android:text="Item 8"
-            android:gravity="center"
-            android:padding="8dp"/>
-
-        <!-- Row 2 -->
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_row="1"
-            android:layout_column="0"
-            android:layout_columnWeight="1"
-            android:text="Item 9"
-            android:gravity="center"
-            android:padding="8dp"/>
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_row="1"
-            android:layout_column="1"
-            android:layout_columnWeight="1"
-            android:text="Item 10"
-            android:gravity="center"
-            android:padding="8dp"/>
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_row="1"
-            android:layout_column="2"
-            android:layout_columnWeight="1"
-            android:text="Item 11"
-            android:gravity="center"
-            android:padding="8dp"/>
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_row="1"
-            android:layout_column="3"
-            android:layout_columnWeight="1"
-            android:text="Item 12"
-            android:gravity="center"
-            android:padding="8dp"/>
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_row="1"
-            android:layout_column="4"
-            android:layout_columnWeight="1"
-            android:text="Item 13"
-            android:gravity="center"
-            android:padding="8dp"/>
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_row="1"
-            android:layout_column="5"
-            android:layout_columnWeight="1"
-            android:text="Item 14"
-            android:gravity="center"
-            android:padding="8dp"/>
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_row="1"
-            android:layout_column="6"
-            android:layout_columnWeight="1"
-            android:text="Item 15"
-            android:gravity="center"
-            android:padding="8dp"/>
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_row="1"
-            android:layout_column="7"
-            android:layout_columnWeight="1"
-            android:text="Item 16"
-            android:gravity="center"
-            android:padding="8dp"/>
-
-    </GridLayout>
-
-</LinearLayout>
+</RelativeLayout>

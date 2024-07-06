@@ -3,6 +3,9 @@ package com.alimrasid.tajwidplusver11.activity
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
+import android.view.Menu
+import android.view.MenuInflater
+import android.view.MenuItem
 import android.widget.SearchView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
@@ -28,6 +31,7 @@ class DoaActivity : AppCompatActivity() {
     private lateinit var recyclerView: RecyclerView
     private lateinit var doaAdapter: DoaAdapter
     private lateinit var searchView: SearchView
+    private var doaList: List<Doa> = emptyList()
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -41,16 +45,6 @@ class DoaActivity : AppCompatActivity() {
 
         fetchDoaData()
 
-//        searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
-//            override fun onQueryTextSubmit(query: String?): Boolean {
-//                return false
-//            }
-//
-//            override fun onQueryTextChange(newText: String?): Boolean {
-//                doaAdapter.filter.filter(newText)
-//                return false
-//            }
-//        })
     }
 
 
@@ -71,6 +65,37 @@ class DoaActivity : AppCompatActivity() {
                 Log.e("MainActivity", "Error: ${t.message}")
             }
         })
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        val inflater: MenuInflater = menuInflater
+        inflater.inflate(R.menu.menu_main, menu)
+
+        val searchItem: MenuItem? = menu?.findItem(R.id.action_search)
+        val searchView = searchItem?.actionView as SearchView
+
+        searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
+            override fun onQueryTextSubmit(query: String?): Boolean {
+                return false
+            }
+
+            override fun onQueryTextChange(newText: String?): Boolean {
+                filter(newText)
+                return true
+            }
+        })
+
+        return true
+    }
+
+    private fun filter(text: String?) {
+        val filteredList = doaList.filter { doa ->
+            doa.judul.contains(text ?: "", ignoreCase = true) ||
+                    doa.latin.contains(text ?: "", ignoreCase = true) ||
+                    doa.arab.contains(text ?: "", ignoreCase = true) ||
+                    doa.terjemah.contains(text ?: "", ignoreCase = true)
+        }
+        doaAdapter.updateList(filteredList)
     }
 
 

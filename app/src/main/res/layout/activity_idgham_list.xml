@@ -76,7 +76,7 @@
                         android:id="@+id/titleTextView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Idgham Bigunnah"
+                        android:text="Idgham Bighunnah"
                         android:textSize="18sp"
                         android:textStyle="bold"
                         android:layout_marginStart="10dp"
@@ -85,10 +85,23 @@
                 </LinearLayout>
 
                 <TextView
-                    android:id="@+id/descriptionTextView"
+                    android:id="@+id/descriptionBighunnah1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/idgham_description1"
+                    android:text="@string/bigunnah1"
+                    android:textSize="16sp"
+                    android:textColor="@color/bd_text"
+                    android:visibility="gone"
+                    android:fontFamily="@font/playfairdisplay_regular"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"/>
+                <TextView
+                    android:id="@+id/descriptionBighunnah2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bigunnah2"
                     android:textSize="16sp"
                     android:textColor="@color/bd_text"
                     android:visibility="gone"

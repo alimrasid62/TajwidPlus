@@ -20,46 +20,41 @@ class IdghamListActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_idgham_list)
 
-        setupCardView(
-            findViewById(R.id.cardViewIdgghom),
-            findViewById(R.id.toggleButton),
-            findViewById(R.id.descriptionTextView)
-        )
-
-        // CardView 2
-        setupCardView(
-            findViewById(R.id.cardViewIdgghom2),
-            findViewById(R.id.toggleButton2),
-            findViewById(R.id.descriptionTextView2)
-        )
-
-        // CardView 3
-        setupCardView(
-            findViewById(R.id.cardViewIdgghom3),
-            findViewById(R.id.toggleButton3),
-            findViewById(R.id.descriptionTextView3)
-        )
-
-        // CardView 4
-        setupCardView(
-            findViewById(R.id.cardViewIdgghom4),
-            findViewById(R.id.toggleButton4),
-            findViewById(R.id.descriptionTextView4)
-        )
-
-        // CardView 5
-        setupCardView(
-            findViewById(R.id.cardViewIdgghom5),
-            findViewById(R.id.toggleButton5),
-            findViewById(R.id.descriptionTextView5)
-        )
-
-        // CardView 6
-        setupCardView(
-            findViewById(R.id.cardViewIdgghom6),
-            findViewById(R.id.toggleButton6),
-            findViewById(R.id.descriptionTextView6)
-        )
+//        setupCardView(
+//            findViewById(R.id.cardViewIdgghom),
+//            findViewById(R.id.toggleButton),
+//            findViewById(R.id.descriptionTextView1)
+//        )
+//
+//        setupCardView(
+//            findViewById(R.id.cardViewIdgghom2),
+//            findViewById(R.id.toggleButton2),
+//            findViewById(R.id.descriptionTextView2)
+//        )
+//
+//        setupCardView(
+//            findViewById(R.id.cardViewIdgghom3),
+//            findViewById(R.id.toggleButton3),
+//            findViewById(R.id.descriptionTextView3)
+//        )
+//
+//        setupCardView(
+//            findViewById(R.id.cardViewIdgghom4),
+//            findViewById(R.id.toggleButton4),
+//            findViewById(R.id.descriptionTextView4)
+//        )
+//
+//        setupCardView(
+//            findViewById(R.id.cardViewIdgghom5),
+//            findViewById(R.id.toggleButton5),
+//            findViewById(R.id.descriptionTextView5)
+//        )
+//
+//        setupCardView(
+//            findViewById(R.id.cardViewIdgghom6),
+//            findViewById(R.id.toggleButton6),
+//            findViewById(R.id.descriptionTextView6)
+//        )
     }
 
     private fun setupCardView(cardView: CardView, toggleButton: ImageButton, descriptionTextView: TextView) {

@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragment.IkhfaSyafawiFragment">
+    tools:context=".fragment.IkhfaSyafawiFragment"
+    android:padding="20dp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -14,28 +15,42 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="Ikhfa Syafawi"
-            android:textSize="30dp"/>
+            android:textColor="@color/bd_text"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/playfairdisplay_black"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            style="@style/MyTextViewStyle"
             android:text="Dikutip dari buku Ilmu Tajwid Praktis oleh Muhammad Amri Amir, ikhfa syafawi adalah hukum tajwid ketika mim sukun (مْ) bertemu dengan huruf ba (ب). Dalam hal ini, mim sukun dibaca tampak samar disertai ghunnah."
             android:textSize="20dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Contoh ikhfa syafawi:"
-            android:textSize="20dp"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="أتَرْمِيهِم بِحِجَارَةٍَّْ"
+            style="@style/MyTextViewStyle"
             android:textSize="20dp"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:paddingRight="20dp"
+            android:text="أتَرْمِيهِم بِحِجَارَةٍَّْ"
+            android:textSize="30dp"
+            style="@style/MyTextViewStyle"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:text="Tarmīhim biḥijāratim (Al Fil ayat 4)"
-            android:textSize="20dp"/>
+            android:textSize="20dp"
+            style="@style/MyTextViewStyle"/>
 
     </LinearLayout>
 

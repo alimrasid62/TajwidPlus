@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".fragment.HalqiFragment"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:padding="20dp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -15,27 +16,39 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="Izhar Halqi"
-            android:textSize="30dp"/>
-<!--        <TextView-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="match_parent"-->
-<!--            android:text="@string/penjelasan_izharHalqi"-->
-<!--            android:textSize="20dp"/>-->
+            android:textColor="@color/bd_text"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/playfairdisplay_black"/>
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Secara bahasa, izhar adalah bayan atau jelas, sedangkan menurut istilah adalah membaca nun mati (نْ) atau tanwin ( ـَــًـ , ـِــٍـ , ـُــٌـ ) dengan jelas tanpa suara dengung atau disamarkan. Hal ini sebagaimana dijelaskan dalam buku Pintar Al-Qur'an karya Abu Nizhan. Ada enam huruf izhar, yaitu hamzah (ء), kha (ح), ha (خ), ain (ع), ghain (غ), dan ha' (هـ). Contoh bacaan izhar:"
-            android:textSize="20dp"/>
+            android:text="Secara bahasa, izhar adalah bayan atau jelas, sedangkan menurut istilah adalah membaca nun mati (نْ) atau tanwin ( ـَــًـ , ـِــٍـ , ـُــٌـ ) dengan jelas tanpa suara dengung atau disamarkan. Hal ini sebagaimana dijelaskan dalam buku Pintar Al-Qur'an karya Abu Nizhan. Ada enam huruf izhar, yaitu hamzah (ء), kha (ح), ha (خ), ain (ع), ghain (غ), dan ha' (هـ)."
+            style="@style/MyTextViewStyle"
+            android:paddingTop="20dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Contoh bacaan izhar halqi :"
+            style="@style/MyTextViewStyle"/>
+        <TextView
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="أَبِى لَهَبٍ وَتَبَّ"
-            android:textSize="20dp"/>
+            android:textSize="30dp"
+            style="@style/MyTextViewStyle"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Mā agnā 'an-hu (QS Al Lahab: 2)"
-            android:textSize="20dp"/>
+            android:textSize="20dp"
+            style="@style/MyTextViewStyle"/>
 
     </LinearLayout>
 

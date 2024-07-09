@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragment.SugraFragment">
+    tools:context=".fragment.SugraFragment"
+    android:padding="20dp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -14,29 +15,42 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="Qalqalah Sugra"
-            android:textSize="30dp"/>
+            android:textColor="@color/bd_text"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/playfairdisplay_black"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Hukum tajwid ini berlaku jika huruf qalqalah yakni ba (ب), jim (ج), dal (د), ta (ط), dan qaf (ق) berada di tengah ayat, dengan suara dipantulkan tidak terlalu kuat."
-            android:textSize="20dp"/>
+            android:textSize="20dp"
+            android:paddingTop="15dp"
+            style="@style/MyTextViewStyle"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Contoh qalqalah sugra:"
-            android:textSize="20dp"/>
+            android:textSize="20dp"
+            style="@style/MyTextViewStyle"/>
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:paddingRight="20dp"
             android:text="رَزَقْنَٰهُمْ"
-            android:textSize="20dp"/>
+            android:textSize="30dp"
+            style="@style/MyTextViewStyle"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="razaqnāhum (Qs Al Baqarah ayat 3)"
-            android:textSize="20dp"/>
+            android:textSize="20dp"
+            style="@style/MyTextViewStyle"/>
 
     </LinearLayout>
 

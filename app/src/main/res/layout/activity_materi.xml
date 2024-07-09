@@ -10,6 +10,16 @@
     android:background="@color/bg_app"
     android:orientation="vertical">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarMateri"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/bg_tollbar"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:textAlignment="center" />
+
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

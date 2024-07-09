@@ -1,12 +1,12 @@
 package com.alimrasid.tajwidplusver11
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
+import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.Toolbar
 import androidx.cardview.widget.CardView
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.alimrasid.tajwidplusver11.materi.IdghamListActivity
 import com.alimrasid.tajwidplusver11.materi.IkhfaListActivity
 import com.alimrasid.tajwidplusver11.materi.IqlabActivity
@@ -14,7 +14,6 @@ import com.alimrasid.tajwidplusver11.materi.IzharListActivity
 import com.alimrasid.tajwidplusver11.materi.ListLainActivity
 
 class MateriActivity : AppCompatActivity() {
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_materi)
@@ -24,6 +23,9 @@ class MateriActivity : AppCompatActivity() {
         val cardView3: CardView = findViewById(R.id.cardIkhfa)
         val cardView4: CardView = findViewById(R.id.cardIqlab)
         val cardView5: CardView = findViewById(R.id.cardLain)
+
+        val toolbar: Toolbar = findViewById(R.id.toolbarMateri)
+        setSupportActionBar(toolbar)
 
         cardView1.setOnClickListener {
             val intent = Intent(this, IzharListActivity::class.java)
@@ -44,6 +46,22 @@ class MateriActivity : AppCompatActivity() {
         cardView5.setOnClickListener {
             val intent = Intent(this, ListLainActivity::class.java)
             startActivity(intent)
+        }
+
+        supportActionBar?.title = ""
+
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.setHomeAsUpIndicator(R.drawable.ic_back)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when (item.itemId) {
+            android.R.id.home -> {
+                onBackPressed()
+                true
+            }
+
+            else -> super.onOptionsItemSelected(item)
         }
 
     }

@@ -8,39 +8,60 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:padding="20dp">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="Ikhfa Hakiki"
-            android:textSize="30dp"/>
+            android:textColor="@color/bd_text"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/playfairdisplay_black"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Hukum nun mati dan tanwin selanjutnya adalah ikhfa. Secara bahasa, ikhfa artinya satru yang berarti menutupi atau menyamarkan. Sementara secara istilah, ikhfa adalah menyamarkan nun mati atau tanwin karena muncul suara dengungan (gunnah) jika bertemu dengan 15 huruf."
-            android:textSize="20dp"/>
+            android:textSize="20dp"
+            android:paddingTop="15dp"
+            style="@style/MyTextViewStyle"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Huruf ikhfa antara lain kaf ( ك ), qaf ( ق ), fa' ( ف ), zha ( ظ ), tha ( ط ), dhad ( ض ), shad ( ص ), syin ( ش ), sin ( س ), za' ( ز ), dzal ( ذ ), dal ( د ), jim ( ج ), tsa' ( ث ), dan ta' ( ت )."
-            android:textSize="20dp"/>
+            android:textSize="20dp"
+            style="@style/MyTextViewStyle"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Contoh bacaan ikhfa hakiki:"
-            android:textSize="20dp"/>
+            android:textSize="20dp"
+            style="@style/MyTextViewStyle"/>
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:paddingEnd="30dp"
             android:text="لَقَدْ خَلَقْنَا ٱلْإِنسَٰنٍََّْ"
-            android:textSize="20dp"/>
+            android:textSize="30dp"
+            style="@style/MyTextViewStyle"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Laqad khalaqnal-insāna (QS At Tin: 4)"
-            android:textSize="20dp"/>
+            android:textSize="20dp"
+            style="@style/MyTextViewStyle"/>
 
     </LinearLayout>
 

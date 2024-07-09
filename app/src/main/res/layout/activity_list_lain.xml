@@ -13,18 +13,21 @@
         android:id="@+id/toolbarLain"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="?attr/colorPrimary"
+        android:background="@color/bg_tollbar"
         android:elevation="4dp"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-        android:textAlignment="center"/>
+        android:textAlignment="center" />
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tab_layoutLain"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:tabMode="fixed"
-        app:tabGravity="fill"/>
+        app:tabGravity="fill"
+        app:tabTextColor="@color/bd_text"
+        app:tabIndicatorAnimationMode="fade"
+        android:backgroundTint="@color/bg_app"/>
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/view_pagerLain"

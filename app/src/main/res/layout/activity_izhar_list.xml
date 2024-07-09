@@ -17,15 +17,18 @@
         android:elevation="4dp"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-        android:textAlignment="center"/>
+        android:textAlignment="center"
+        android:backgroundTint="@color/bg_tollbar"/>
 
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tab_layoutizhar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:tabTextColor="@color/bd_text"
         app:tabMode="fixed"
-        app:tabGravity="fill"/>
+        app:tabGravity="fill"
+        android:background="@color/bg_app"/>
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/view_pagerizhar"

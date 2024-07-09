@@ -11,9 +11,18 @@
     android:gravity="center"
     android:background="@color/bg_app">
 
+    <ImageView
+        android:id="@+id/imageMain"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:foregroundGravity="center"
+        android:layout_centerHorizontal="true" 
+        android:src="@drawable/ic_logo2" />
+
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@id/imageMain"
         android:columnCount="2"
         android:rowCount="2"
         android:layout_gravity="center"

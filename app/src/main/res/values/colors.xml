@@ -5,6 +5,7 @@
 
     <color name="bg_app">#eeeed4</color>
     <color name="bg_cardview">#efe3bb</color>
+    <color name="bg_tollbar">#ACA471</color>
     <color name="txt_button">#746532</color>
     <color name="bd_text">#235b1a</color>
 </resources>

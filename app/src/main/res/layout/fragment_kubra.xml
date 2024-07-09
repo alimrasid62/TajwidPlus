@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragment.KubraFragment">
+    tools:context=".fragment.KubraFragment"
+    android:padding="20dp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -14,29 +15,42 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="Qalqalah Kubra"
-            android:textSize="30dp"/>
+            android:textColor="@color/bd_text"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/playfairdisplay_black"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Berbeda dengan qalqalah sugra, cara baca tajwid ini adalah dengan pantulan cukup kuat. Huruf qalqalah kubra berada di akhir ayat."
-            android:textSize="20dp"/>
+            android:textSize="20dp"
+            android:paddingTop="20dp"
+            style="@style/MyTextViewStyle"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="CContohnya qalqalah kubra:"
-            android:textSize="20dp"/>
+            android:text="Contohnya qalqalah kubra:"
+            android:textSize="20dp"
+            style="@style/MyTextViewStyle"/>
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="وَٱلْيَوْمِ ٱلْمَوْعُودِ"
-            android:textSize="20dp"/>
+            android:paddingRight="20dp"
+            style="@style/MyTextViewStyle"
+            android:textSize="30dp"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Wal-yaumil-mau'ụd (QS Al Buruj ayat 2)"
-            android:textSize="20dp"/>
+            android:textSize="20dp"
+            style="@style/MyTextViewStyle"/>
 
     </LinearLayout>
 

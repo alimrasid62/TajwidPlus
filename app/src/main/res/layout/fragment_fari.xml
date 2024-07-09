@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragment.FariFragment">
+    tools:context=".fragment.FariFragment"
+    android:padding="20dp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -14,29 +15,41 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="Mad Far'i"
-            android:textSize="30dp"/>
+            android:textColor="@color/bd_text"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/playfairdisplay_black"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Hukum tajwid yang ini mengharuskan ayat dibaca lebih panjang dari mad thabi'i. Tambahan ini dikarenakan adanya hamzah (ء) atau sukun (ه) dalam ayat. Contohnya adalah:"
-            android:textSize="20dp"/>
+            android:textSize="20dp"
+            android:paddingTop="20dp"
+            style="@style/MyTextViewStyle"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Contoh Mad Far'i:"
-            android:textSize="20dp"/>
+            android:textSize="20dp"
+            style="@style/MyTextViewStyle"/>
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="ءَآللَّهُ خَيْرٌ"
-            android:textSize="20dp"/>
+            android:textSize="30dp"
+            style="@style/MyTextViewStyle"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Allāhu khairun (QS An Naml ayat 59)."
-            android:textSize="20dp"/>
+            android:textSize="20dp"
+            style="@style/MyTextViewStyle"/>
 
     </LinearLayout>
 

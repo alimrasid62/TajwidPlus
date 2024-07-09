@@ -1,48 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activity.AyatActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/bg_app">
 
-
-    <TextView
-        android:id="@+id/teksArabText"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="18sp"
-        android:textStyle="bold" />
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/teksArabText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            style="@style/MyTextViewStyle"/>
 
 
-    <TextView
-        android:id="@+id/tajwidTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="14sp"
-        android:paddingBottom="8dp"
-        android:textColor="@android:color/holo_blue_dark"/>
+        <TextView
+            android:id="@+id/tajwidTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:paddingBottom="8dp"
+            android:textColor="@android:color/holo_blue_dark"/>
 
-    <TextView
-        android:id="@+id/teksLatinText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="16sp"
-        android:paddingTop="4dp" />
+        <TextView
+            android:id="@+id/teksLatinText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:paddingTop="4dp"
+            style="@style/MyTextViewStyle"/>
 
-    <TextView
-        android:id="@+id/teksIndonesiaText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="16sp"
-        android:paddingTop="4dp" />
+        <TextView
+            android:id="@+id/teksIndonesiaText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:paddingTop="4dp"
+            style="@style/MyTextViewStyle"/>
 
-    <Button
-        android:id="@+id/detectTajwidButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Detect Tajwid"/>
+        <Button
+            android:id="@+id/detectTajwidButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Detect Tajwid"
+            style="@style/MyTextViewStyle"/>
+    </LinearLayout>
 
-</LinearLayout>
+
+
+</RelativeLayout>

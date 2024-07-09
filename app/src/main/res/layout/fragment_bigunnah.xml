@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.BigunnahFragment"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Idghom Bigunnah"
+            android:textColor="@color/bd_text"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/playfairdisplay_black"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/bigunnah1"
+            style="@style/MyTextViewStyle"
+            android:paddingTop="20dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/bigunnah2"
+            style="@style/MyTextViewStyle"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/bigunnah3"
+            style="@style/MyTextViewStyle"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/bigunnah4"
+            android:textSize="30sp"
+            android:paddingRight="20dp"
+            style="@style/MyTextViewStyle"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/bigunnah5"
+            android:textSize="20sp"
+            style="@style/MyTextViewStyle"/>
+
+    </LinearLayout>
+
+</FrameLayout>

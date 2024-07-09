@@ -8,12 +8,14 @@
 
     <string name="bigunnah1">Secara bahasa, idgham artinya idkhal atau memasukkan, sedangkan secara istilah adalah menyamarkan atau meleburkan nun mati atau tanwin dengan huruf-huruf idgham sehingga seolah-olah menjadi satu huruf yang bertasydid.</string>
     <string name="bigunnah2">Adapun, idgham bigunnah yaitu jika nun mati atau tanwin bertemu dengan huruf ya (ي), nun (ن), mim (م), dan wau (و), maka harus dibaca idgham disertai dengan dengung di hidung (gunnah).</string>
+    <string name="bigunnah3">Contoh bacaan idgham bighunnah:</string>
+    <string name="bigunnah4">أَبِى لَهَبٍ وَتَبَّ</string>
+    <string name="bigunnah5">Arab latin: Abī lahabiw wa tabb (QS Al Lahab: 1)</string>
 
-    <!--    <string name="penjelasan_izharHalqi">-->
-    <!--        Secara bahasa, izhar adalah bayan atau jelas, sedangkan-->
-    <!--        menurut istilah adalah membaca nun mati (نْ) atau tanwin ( ـَــًـ , ـِــٍـ , ـُــٌـ ) dengan jelas-->
-    <!--        tanpa suara dengung atau disamarkan. Hal ini sebagaimana dijelaskan dalam buku Pintar Al-Quran-->
-    <!--        karya Abu Nizhan.Ada enam huruf izhar, yaitu hamzah (ء), kha (ح), ha (خ), ain (ع), ghain (غ),-->
-    <!--        dan ha' (هـ).-->
-    <!--    </string>-->
+    <string name="bilagunnah1">Idgham bilaghunnah yaitu jika nun mati atau tanwin bertemu dengan lam (ل) dan ra (ر), maka harus dibaca idgham tanpa disertai dengung di hidung (gunnah).</string>
+    <string name="bilagunnah2">Contoh bacaan idgham bilaghunnah:</string>
+    <string name="bilagunnah3">وَلَمْ يَكُنْ لَهُ</string>
+    <string name="bilagunnah4">Arab latin: Wa lam yakul lahụ (QS Al Ikhlas: 4)</string>
+
+
 </resources>

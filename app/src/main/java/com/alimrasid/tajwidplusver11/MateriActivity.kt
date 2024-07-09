@@ -1,13 +1,12 @@
 package com.alimrasid.tajwidplusver11
 
-import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.cardview.widget.CardView
-import com.alimrasid.tajwidplusver11.materi.IdghamListActivity
+import com.alimrasid.tajwidplusver11.materi.IdghomActivity
 import com.alimrasid.tajwidplusver11.materi.IkhfaListActivity
 import com.alimrasid.tajwidplusver11.materi.IqlabActivity
 import com.alimrasid.tajwidplusver11.materi.IzharListActivity
@@ -32,7 +31,7 @@ class MateriActivity : AppCompatActivity() {
             startActivity(intent)
         }
         cardView2.setOnClickListener {
-            val intent = Intent(this, IdghamListActivity::class.java)
+            val intent = Intent(this, IdghomActivity::class.java)
             startActivity(intent)
         }
         cardView3.setOnClickListener {

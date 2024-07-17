@@ -15,31 +15,26 @@
         android:background="@color/bg_cardview">
 
         <TextView
-            android:id="@+id/teksArabTextView"
+            android:id="@+id/tvAyatArabic"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="18sp"
+            android:textSize="30sp"
             android:textStyle="bold"
-            android:textColor="@color/bd_text"
-            android:fontFamily="@font/playfairdisplay_regular"/>
+            style="@style/MyTextViewStyle"/>
 
         <TextView
-            android:id="@+id/teksLatinTextView"
+            android:id="@+id/tvAyatTranslation"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="16sp"
-            android:paddingTop="4dp"
-            android:textColor="@color/bd_text"
-            android:fontFamily="@font/playfairdisplay_regular"/>
+            style="@style/MyTextViewStyle"/>
 
         <TextView
-            android:id="@+id/teksIndonesiaTextView"
+            android:id="@+id/tvAyatIdn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="16sp"
-            android:paddingTop="4dp"
-            android:textColor="@color/bd_text"
-            android:fontFamily="@font/playfairdisplay_regular"/>
+            style="@style/MyTextViewStyle"/>
     </LinearLayout>
 
 </androidx.cardview.widget.CardView>

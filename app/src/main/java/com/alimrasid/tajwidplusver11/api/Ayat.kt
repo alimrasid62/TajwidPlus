@@ -1,8 +1,10 @@
 package com.alimrasid.tajwidplusver11.api
 
 data class Ayat (
-    val nomorAyat: Int,
-    val teksArab: String,
-    val teksLatin: String,
-    val teksIndonesia: String
+    val id: Int,
+    val surah: Int,
+    val nomor: Int,
+    val ar: String,
+    val tr: String,
+    val idn: String
 )

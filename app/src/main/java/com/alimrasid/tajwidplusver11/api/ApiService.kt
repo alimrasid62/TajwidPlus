@@ -6,11 +6,14 @@ import retrofit2.http.Path
 
 interface ApiService {
 
-    @GET("v2/surat")
-    fun getSurat(): Call<SuratResponse>
+//    @GET("v2/surat")
+//    fun getSurat(): Call<SuratResponse>
 
-    @GET("v2/surat/{nomor}")
-    fun getSuratDetail(@Path("nomor") nomor: Int): Call<SuratDetailResponse>
+    @GET("api/quran/surah")
+    fun getSurahList(): Call<List<Surat>>
+
+    @GET("api/quran/surah/{nomor}")
+    fun getSurahDetail(@Path("nomor") nomor: Int): Call<SuratDetail>
 
     @GET("doa")
     fun getDoaList(): Call<List<Doa>>

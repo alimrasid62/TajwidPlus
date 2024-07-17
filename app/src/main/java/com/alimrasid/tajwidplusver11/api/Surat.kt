@@ -3,9 +3,10 @@ package com.alimrasid.tajwidplusver11.api
 data class Surat (
     val nomor: Int,
     val nama: String,
-    val namaLatin: String,
-    val jumlahAyat: Int,
-    val tempatTurun: String,
+    val nama_latin: String,
+    val jumlah_ayat: Int,
+    val tempat_turun: String,
     val arti: String,
-    val deskripsi: String?
+    val deskripsi: String,
+    val audio: String
 )

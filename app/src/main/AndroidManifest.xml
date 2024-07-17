@@ -12,7 +12,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.TajwidPlus12"
+        android:theme="@style/Theme.TajwidPlus"
         tools:targetApi="31">
         <activity
             android:name=".materi.IdghomActivity"
@@ -25,9 +25,6 @@
             android:exported="false" />
         <activity
             android:name=".materi.IqlabActivity"
-            android:exported="false" />
-        <activity
-            android:name=".materi.IdghamListActivity"
             android:exported="false" />
         <activity
             android:name=".materi.IzharListActivity"

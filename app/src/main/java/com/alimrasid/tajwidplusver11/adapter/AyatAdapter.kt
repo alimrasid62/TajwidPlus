@@ -1,30 +1,20 @@
 package com.alimrasid.tajwidplusver11.adapter
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.alimrasid.tajwidplusver11.R
+import com.alimrasid.tajwidplusver11.activity.AyatActivity
 import com.alimrasid.tajwidplusver11.api.Ayat
 
-class AyatAdapter (private val ayatList: List<Ayat>,
-                   private val onItemClick: (Ayat) -> Unit) : RecyclerView.Adapter<AyatAdapter.AyatViewHolder>() {
+class AyatAdapter(private val ayatList: List<Ayat>) : RecyclerView.Adapter<AyatAdapter.AyatViewHolder>() {
 
     class AyatViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        private val teksArabTextView: TextView = itemView.findViewById(R.id.teksArabTextView)
-        private val teksLatinTextView: TextView = itemView.findViewById(R.id.teksLatinTextView)
-        private val teksIndonesiaTextView: TextView =
-            itemView.findViewById(R.id.teksIndonesiaTextView)
-
-        fun bind(ayat: Ayat, onItemClick: (Ayat) -> Unit) {
-            teksArabTextView.text = ayat.teksArab
-            teksLatinTextView.text = ayat.teksLatin
-            teksIndonesiaTextView.text = ayat.teksIndonesia
-            itemView.setOnClickListener {
-                onItemClick(ayat)
-            }
-        }
+        val ayatArabic: TextView = itemView.findViewById(R.id.tvAyatArabic)
+        val ayatTranslation: TextView = itemView.findViewById(R.id.tvAyatTranslation)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): AyatViewHolder {
@@ -32,12 +22,23 @@ class AyatAdapter (private val ayatList: List<Ayat>,
         return AyatViewHolder(view)
     }
 
-    override fun getItemCount(): Int {
-        return ayatList.size
-    }
-
     override fun onBindViewHolder(holder: AyatViewHolder, position: Int) {
         val ayat = ayatList[position]
-        holder.bind(ayat, onItemClick)
+        holder.ayatArabic.text = ayat.ar
+        holder.ayatTranslation.text = ayat.idn
+
+        holder.itemView.setOnClickListener {
+            val context = holder.itemView.context
+            val intent = Intent(context, AyatActivity::class.java).apply {
+                putExtra("ayat_arabic", ayat.ar)
+                putExtra("ayat_translation", ayat.idn)
+                putExtra("ayat_transliteration", ayat.tr)
+            }
+            context.startActivity(intent)
+        }
+    }
+
+    override fun getItemCount(): Int {
+        return ayatList.size
     }
 }

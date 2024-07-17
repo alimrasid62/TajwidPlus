@@ -11,8 +11,10 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.alimrasid.tajwidplusver11.R
 import com.alimrasid.tajwidplusver11.adapter.SuratAdapter
+import com.alimrasid.tajwidplusver11.api.ApiClient
 import com.alimrasid.tajwidplusver11.api.ApiService
 import com.alimrasid.tajwidplusver11.api.RetrofitClient
+import com.alimrasid.tajwidplusver11.api.Surat
 import com.alimrasid.tajwidplusver11.api.SuratResponse
 import retrofit2.Call
 import retrofit2.Callback
@@ -21,6 +23,8 @@ import retrofit2.Response
 class QuranActivity : AppCompatActivity(){
 
     private lateinit var recyclerView: RecyclerView
+    private lateinit var surahAdapter: SuratAdapter
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -33,28 +37,19 @@ class QuranActivity : AppCompatActivity(){
     }
 
     private fun fetchSuratData() {
-        val apiService = RetrofitClient.instance.create(ApiService::class.java)
-        apiService.getSurat().enqueue(object : Callback<SuratResponse> {
-            override fun onResponse(call: Call<SuratResponse>, response: Response<SuratResponse>) {
+        val call = RetrofitClient.apiService.getSurahList()
+        call.enqueue(object : Callback<List<Surat>> {
+            override fun onResponse(call: Call<List<Surat>>, response: Response<List<Surat>>) {
                 if (response.isSuccessful) {
-                    val suratList = response.body()?.data
-                    suratList?.let {
-                        recyclerView.adapter = SuratAdapter(it) { surat ->
-                            val intent = Intent(this@QuranActivity, SuratActivity::class.java)
-                            intent.putExtra("nomorSurat", surat.nomor)
-                            startActivity(intent)
-                        }
-                    }
+                    val surahList = response.body() ?: emptyList()
+                    surahAdapter = SuratAdapter(surahList)
+                    recyclerView.adapter = surahAdapter
                 } else {
-                    Toast.makeText(
-                        this@QuranActivity,
-                        "Failed to retrieve data",
-                        Toast.LENGTH_SHORT
-                    ).show()
+                    Toast.makeText(this@QuranActivity, "Failed to get data", Toast.LENGTH_SHORT).show()
                 }
             }
 
-            override fun onFailure(call: Call<SuratResponse>, t: Throwable) {
+            override fun onFailure(call: Call<List<Surat>>, t: Throwable) {
                 Toast.makeText(this@QuranActivity, "Error: ${t.message}", Toast.LENGTH_SHORT).show()
             }
         })

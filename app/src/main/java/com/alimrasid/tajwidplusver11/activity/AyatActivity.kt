@@ -83,8 +83,7 @@ class AyatActivity : AppCompatActivity() {
                     end,
                     Spannable.SPAN_EXCLUSIVE_EXCLUSIVE
                 )
-
-                // Append tajwid name to the list
+                
                 tajwidNames.add("Position: ${match.range.first}-${match.range.last}, Tajwid: $tajwidName")
 
                 offset += tajwidName.length

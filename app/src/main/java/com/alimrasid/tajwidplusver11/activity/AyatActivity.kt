@@ -54,10 +54,16 @@ class AyatActivity : AppCompatActivity() {
     private fun highlightTajwid(text: String): Pair<SpannableStringBuilder, List<String>> {
         val spannableStringBuilder = SpannableStringBuilder(text)
         val tajwidPatterns = listOf(
-            "(نْ|ً|ٍ|ٌ)(ء|ح|خ|ع|غ|هـ)" to "Izhar",
-            "(نْ|ً|ٍ|ٌ)(ي|ن|م|و)" to "Idgham",
-            "(نْ|ً|ٍ|ٌ)ب" to "Iqlab",
-            "(نْ|ً|ٍ|ٌ)(ت|ث|ج|د|ذ|ز|س|ش|ص|ض|ط|ظ|ف|ق|ك)" to "Ikhfa"
+            "(نْ|ً|ٍ|ٌ)(ت|ث|ج|د|ذ|ز|س|ش|ص|ض|ط|ظ|ف|ق|ك)" to "Ikhfa",
+            "(نْ)(ي|ن|م|و|ل|ر)" to "Idgham",
+            "(نْ|ً|ٍ|ٌ)(ب)" to "Iqlab",
+            "(نْ|ً|ٍ|ٌ)(ء|ح|خ|ع|غ|ه)" to "Izhar"
+//                "(نْ|ً|ٍ|ٌ)(ي|ن|م|و)" to "Idghom"
+//                "(نْ|ً|ٍ|ٌ)(ء|ح|خ|ع|غ|هـ)" to "Izhar"
+//                "(نْ|ً|ٍ|ٌ)(ب)" to "Iqlab",
+//                "(نْ|ً|ٍ|ٌ)(ي|ن|م|و)" to "Idgham",
+//                "(نْ|ً|ٍ|ٌ)(ء|ح|خ|ع|غ|هـ)" to "Izhar"
+
         )
         val colors = listOf(
             Color.GREEN, // Izhar
@@ -83,7 +89,7 @@ class AyatActivity : AppCompatActivity() {
                     end,
                     Spannable.SPAN_EXCLUSIVE_EXCLUSIVE
                 )
-                
+
                 tajwidNames.add("Position: ${match.range.first}-${match.range.last}, Tajwid: $tajwidName")
 
                 offset += tajwidName.length
